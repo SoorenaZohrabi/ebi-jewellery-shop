@@ -1,12 +1,14 @@
-header {
-    .navbar {
-        background-color: #FCBA12 !important;
-        color: #FB8604 !important;
-    }
-    
-    .carousel-inner {
-        height: 500px !important;
-    }
+.navbar {
+    background-color: #FCBA12 !important;
+    color: #FB8604 !important;
+}
+
+.carousel {
+    background-color: #F7E7D4;
+}
+
+.carousel-inner {
+    height: 500px !important;
 }
 
 .posts {
@@ -23,9 +25,7 @@ header {
     text-decoration: none;
 }
 
-.carousel {
-    background-color: #F7E7D4;
-}
+
 
 .new_jewellery .h1 {
     padding: 20px !important;
