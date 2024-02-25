@@ -1,13 +1,29 @@
-header .navbar {
-  background-color: #FCBA12 !important;
-  color: #FB8604 !important;
+:root {
+  --c1: #FCBA12;
+  --c2: #FB8604;
+  --c3: #F7E7D4;
+  --c4: #343009;
 }
-header .carousel-inner {
+
+.main {
+  background-color: var(--c3);
+}
+
+.navbar {
+  background-color: var(--c1) !important;
+  color: var(--c2) !important;
+}
+
+.carousel {
+  background-color: var(--c3);
+}
+
+.carousel-inner {
   height: 500px !important;
 }
 
 .posts {
-  background-color: #F7E7D4;
+  background-color: var(--c3);
 }
 
 .card {
@@ -20,11 +36,7 @@ header .carousel-inner {
   text-decoration: none;
 }
 
-.carousel {
-  background-color: #F7E7D4;
-}
-
-.new_jewellery .h1 {
+.jewellery .h1 {
   padding: 20px !important;
 }
 
@@ -34,8 +46,8 @@ header .carousel-inner {
 
 .footer {
   padding: 20px;
-  background-color: #343009 !important;
-  color: #FB8604 !important;
+  background-color: var(--c4) !important;
+  color: var(--c2) !important;
 }
 
 .h3 {
@@ -45,8 +57,4 @@ header .carousel-inner {
 
 .col-2 {
   margin-right: 10px;
-}
-
-.bbb {
-  background-color: #F7E7D4;
 }/*# sourceMappingURL=style.css.map */
