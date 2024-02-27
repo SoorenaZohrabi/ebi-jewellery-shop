@@ -1,8 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --c1: #FCBA12;
   --c2: #FB8604;
   --c3: #F7E7D4;
   --c4: #343009;
+}
+
+body {
+  background-color: var(--c3);
 }
 
 header .navbar {
@@ -17,8 +27,7 @@ header .carousel-inner {
 }
 
 main {
-  width: 100%;
-  background-color: var(--c3);
+  min-height: 92vh;
 }
 main .posts {
   background-color: var(--c3);
@@ -37,13 +46,18 @@ main .posts .card a {
 main .posts .col {
   margin-bottom: 20px;
 }
+main .loginSignInForm form {
+  background: rgb(252, 186, 18);
+  background: linear-gradient(90deg, rgba(252, 186, 18, 0.1152836134) 8%, rgba(252, 186, 18, 0.1040791317) 96%);
+}
 
 footer {
   padding: 20px;
   background-color: var(--c4) !important;
   color: var(--c2) !important;
 }
-footer .accordion-item button, footer .accordion-item .accordion-header {
+footer .accordion-item button,
+footer .accordion-item .accordion-header {
   background-color: var(--c2) !important;
   color: var(--c4) !important;
 }
@@ -62,4 +76,25 @@ footer .accordion-item .accordion-body li {
 .h3 {
   border-bottom: 2px solid red;
   text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .loginSignInForm {
+    width: 90% !important;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 619px) {
+  .loginSignInForm {
+    width: 60% !important;
+  }
+}
+@media screen and (min-width: 620px) and (max-width: 970px) {
+  .loginSignInForm {
+    width: 45% !important;
+  }
+}
+@media screen and (min-width: 971px) and (max-width: 1200px) {
+  .loginSignInForm {
+    width: 30% !important;
+  }
 }/*# sourceMappingURL=style.css.map */

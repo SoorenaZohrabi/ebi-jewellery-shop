@@ -74,7 +74,45 @@
     </header>
 
     <main>
+        <section class="loginSignInForm w-25 m-auto">
+            <form class="row gy-2 gx-3 align-items-center mt-5 needs-validation novalidate rounded shadow" id="loginForm" autocomplete="on">
+                <div class="form-group col-12 pb-3 pt-3">
+                    <label class="visually-hidden" for="username">Username</label>
+                    <div class="input-group">
+                        <div class="input-group-text bg-warning">@</div>
+                        <input type="text" class="form-control" id="username" placeholder="Username" required>
+                    </div>
+                </div>
 
+                <div class="form-group col-12 pb-4">
+                    <label class="visually-hidden" for="password">Password</label>
+                    <div class="input-group">
+                        <div class="input-group-text bg-warning">*</div>
+                        <input type="text" class="form-control invalid" id="password" placeholder="Password" required>
+                        <div class="invalid-feedback">
+                            Incorrect password or username.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-auto pb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="saveDataCheck">
+                        <label class="form-check-label" for="saveDataCheck">
+                            Remember me
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12 pb-2" onmouseenter="checkAdminUsername()">
+                    <a id="loginButton"><button type="submit" class="btn btn-warning w-100">Login</button></a>
+                </div>
+
+                <div class="formHelpers row pb-3">
+                    <a href="" class="col-auto link-secondary text-decoration-none">Don`t have an account?<span class="link-info"> Sign up now!</span></a>
+                    <a href="" class="col-auto link-secondary text-decoration-none">Forgot password?</a>
+                </div>
+            </form>
+        </section>
     </main>
 </body>
 
