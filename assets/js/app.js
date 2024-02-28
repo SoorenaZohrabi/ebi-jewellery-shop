@@ -1,5 +1,5 @@
 
-const loginButton = document.getElementById("loginButton");
+const loginForm = document.getElementById("loginForm");
 
 function s() {
     if (window.innerWidth <= 480) {
@@ -17,7 +17,6 @@ function checkAdminUsername() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
     if (username.toUpperCase() === "ADMINMOB" && password === "13579A") {
-        console.log(username, password, loginButton);
-        loginButton.setAttribute('href', 'dashboard.html');
+        loginForm.setAttribute('action', './dashboard.html');
     }
 }
