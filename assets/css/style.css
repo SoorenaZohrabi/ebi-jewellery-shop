@@ -11,6 +11,10 @@
   --c4: #343009;
 }
 
+.tx-c-4 {
+  color: var(--c3) !important;
+}
+
 body {
   background-color: var(--c3);
 }
@@ -49,6 +53,23 @@ main .posts .col {
 main .loginSignInForm form {
   background: rgb(252, 186, 18);
   background: linear-gradient(90deg, rgba(252, 186, 18, 0.1152836134) 8%, rgba(252, 186, 18, 0.1040791317) 96%);
+}
+main .adminPanel {
+  width: 95%;
+}
+main .adminPanel .nav-pills .nav-header {
+  background-color: var(--c4);
+  color: #F7E7D4;
+}
+main .adminPanel .nav-pills button {
+  background-color: var(--c2);
+}
+main .adminPanel .nav-pills .active {
+  color: var(--c4) !important;
+  background-color: var(--c2);
+  box-shadow: 0px 4px 3px var(--c1), 0px -4px 3px var(--c1);
+  translate: 25px 0px;
+  transition: 0.9s;
 }
 
 footer {

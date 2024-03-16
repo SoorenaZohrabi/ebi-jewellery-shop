@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jewellery shop - Login&Sign up</title>
+    <title>Jewellery shop - Admin page</title>
+    <link rel="shortcut icon" href="./../assets/images/icons/jewel-96.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./../assets/css/style.css">
@@ -21,61 +22,42 @@
 </head>
 
 <body>
-    <header>
+    <main>
+        <section class="adminPanel m-auto mt-3">
+            <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills me-3 rounded-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link nav-header text-center" href="./../index.html" target="_blank">Home</a>
+                    <button class="nav-link tx-c-4 mt-2" id="v-pills-adminProfile-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-adminProfile" type="button" role="tab"
+                        aria-controls="v-pills-adminProfile" aria-selected="true">Admin profile</button>
 
-        <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="nav-link tx-c-4 mt-2" id="v-pills-creation-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-creation" type="button" role="tab" aria-controls="v-pills-creation"
+                        aria-selected="false">Creation</button>
 
-            <div class="container-fluid ">
-                <a class="navbar-brand " href="./../index.html">Ebi Jewellery shop</a>
+                    <button class="nav-link tx-c-4 mt-2" id="v-pills-progress-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-progress" type="button" role="tab" aria-controls="v-pills-progress"
+                        aria-selected="false">Progress</button>
+                </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade" id="v-pills-adminProfile" role="tabpanel"
+                        aria-labelledby="v-pills-adminProfile-tab">
+                        2
+                    </div>
 
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./../index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="men.html" id="navbarDarkDropdownMenuLink"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Men
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="./mRings.html">rings</a></li>
-                                <li><a class="dropdown-item" href="./mNecklaces.html">Necklaces</a></li>
-                                <li><a class="dropdown-item" href="./mBracelet">bracelet</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="women.html" id="navbarDarkDropdownMenuLink"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Women
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="./wRings.html">rings</a></li>
-                                <li><a class="dropdown-item" href="./wNecklaces">Necklaces</a></li>
-                                <li><a class="dropdown-item" href="./wBracelet">bracelet</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link active" href="./login.html">sign up & login</a></li>
-                    </ul>
+                    <div class="tab-pane fade" id="v-pills-creation" role="tabpanel"
+                        aria-labelledby="v-pills-creation-tab">
+                        
+                    </div>
 
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <div class="tab-pane fade" id="v-pills-progress" role="tabpanel"
+                        aria-labelledby="v-pills-progress-tab">
+                        
+                    </div>
                 </div>
             </div>
-
-        </nav>
-
-    </header>
-
-    <main>
-
+        </section>
     </main>
 </body>
 
