@@ -4,94 +4,8 @@
   padding: 0;
 }
 
-:root {
-  --c1: #FCBA12;
-  --c2: #FB8604;
-  --c3: #F7E7D4;
-  --c4: #343009;
-}
-
 .tx-c-4 {
-  color: var(--c3) !important;
-}
-
-body {
-  background-color: var(--c3);
-}
-
-header .navbar {
-  background-color: var(--c1) !important;
-  color: var(--c2) !important;
-}
-header .carousel {
-  background-color: var(--c3);
-}
-header .carousel-inner {
-  height: 500px !important;
-}
-
-main {
-  min-height: 92vh;
-}
-main .posts {
-  background-color: var(--c3);
-}
-main .posts .jewellery .h1 {
-  padding: 20px !important;
-}
-main .posts .card {
-  background-color: transparent;
-  box-shadow: 0 2px 4px black;
-}
-main .posts .card a {
-  color: black;
-  text-decoration: none;
-}
-main .posts .col {
-  margin-bottom: 20px;
-}
-main .loginSignInForm form {
-  background: rgb(252, 186, 18);
-  background: linear-gradient(90deg, rgba(252, 186, 18, 0.1152836134) 8%, rgba(252, 186, 18, 0.1040791317) 96%);
-}
-main .adminPanel {
-  width: 95%;
-}
-main .adminPanel .nav-pills .nav-header {
-  background-color: var(--c4);
   color: #F7E7D4;
-}
-main .adminPanel .nav-pills button {
-  background-color: var(--c2);
-}
-main .adminPanel .nav-pills .active {
-  color: var(--c4) !important;
-  background-color: var(--c2);
-  box-shadow: 0px 4px 3px var(--c1), 0px -4px 3px var(--c1);
-  translate: 25px 0px;
-  transition: 0.9s;
-}
-
-footer {
-  padding: 20px;
-  background-color: var(--c4) !important;
-  color: var(--c2) !important;
-}
-footer .accordion-item button,
-footer .accordion-item .accordion-header {
-  background-color: var(--c2) !important;
-  color: var(--c4) !important;
-}
-footer .accordion-item .accordion-body {
-  background-color: var(--c3);
-  color: var(--c4);
-}
-footer .accordion-item .accordion-body ul {
-  margin: auto;
-}
-footer .accordion-item .accordion-body li {
-  list-style: none;
-  border-bottom: 1px solid red;
 }
 
 .h3 {
@@ -99,23 +13,180 @@ footer .accordion-item .accordion-body li {
   text-align: center;
 }
 
+body {
+  background-color: #F7E7D4;
+}
+
+header .navbar {
+  background-color: #FCBA12;
+  color: #FB8604;
+}
+header .carousel {
+  background-color: #F7E7D4;
+}
+header .carousel-inner {
+  height: 500px;
+}
+
+main {
+  min-height: 92vh;
+}
+main .posts,
+main .trend-jewellery,
+main .most-sold-jewellery,
+main .new-jewellery {
+  background-color: #F7E7D4;
+}
+main .posts h1,
+main .trend-jewellery h1,
+main .most-sold-jewellery h1,
+main .new-jewellery h1 {
+  padding: 20px;
+  border-bottom: 2px solid red;
+  text-align: center;
+}
+main .posts .card,
+main .trend-jewellery .card,
+main .most-sold-jewellery .card,
+main .new-jewellery .card {
+  background-color: transparent;
+  box-shadow: 0 2px 4px black;
+}
+main .posts .card .card-price,
+main .trend-jewellery .card .card-price,
+main .most-sold-jewellery .card .card-price,
+main .new-jewellery .card .card-price {
+  color: #343009;
+  font-weight: bold;
+}
+main .posts .card a,
+main .trend-jewellery .card a,
+main .most-sold-jewellery .card a,
+main .new-jewellery .card a {
+  color: black;
+  text-decoration: none;
+}
+main .posts .card .btn,
+main .trend-jewellery .card .btn,
+main .most-sold-jewellery .card .btn,
+main .new-jewellery .card .btn {
+  background-color: #FB8604;
+  color: #F7E7D4;
+}
+main .posts .card .btn:hover,
+main .trend-jewellery .card .btn:hover,
+main .most-sold-jewellery .card .btn:hover,
+main .new-jewellery .card .btn:hover {
+  background-color: rgb(200.8, 107.2, 3.2);
+}
+main .posts .col,
+main .trend-jewellery .col,
+main .most-sold-jewellery .col,
+main .new-jewellery .col {
+  margin-bottom: 20px;
+}
+main .loginSignInForm form {
+  background: linear-gradient(90deg, rgba(252, 186, 18, 0.115) 8%, rgba(252, 186, 18, 0.104) 96%);
+}
 @media screen and (max-width: 500px) {
-  .loginSignInForm {
-    width: 90% !important;
+  main .loginSignInForm {
+    width: 90%;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 619px) {
-  .loginSignInForm {
-    width: 60% !important;
+  main .loginSignInForm {
+    width: 60%;
   }
 }
 @media screen and (min-width: 620px) and (max-width: 970px) {
-  .loginSignInForm {
-    width: 45% !important;
+  main .loginSignInForm {
+    width: 45%;
   }
 }
 @media screen and (min-width: 971px) and (max-width: 1200px) {
-  .loginSignInForm {
-    width: 30% !important;
+  main .loginSignInForm {
+    width: 30%;
   }
+}
+main .adminPanel {
+  width: 95%;
+}
+main .adminPanel .nav-pills {
+  width: 15%;
+}
+main .adminPanel .nav-pills .nav-header {
+  background-color: #343009;
+  color: #F7E7D4;
+}
+main .adminPanel .nav-pills button {
+  background-color: #FB8604;
+}
+main .adminPanel .nav-pills .active {
+  color: #343009;
+  background-color: #FB8604;
+  box-shadow: 0 4px 3px #FCBA12, 0 -4px 3px #FCBA12;
+  translate: 25px 0;
+  transition: 0.9s;
+}
+main .adminPanel .tab-content {
+  width: 80%;
+  height: 90vh;
+  margin-left: 5%;
+  background-color: #FB8604;
+  box-shadow: -1px -1px 45px -2px rgb(116, 156, 168), 1px 1px 45px -2px rgb(116, 156, 168);
+  border-radius: 37px 37px 20px 20px;
+}
+main .adminPanel .tab-content #v-pills-adminProfile {
+  height: 100%;
+}
+main .adminPanel .tab-content #v-pills-adminProfile .adminProfileImage {
+  height: 50%;
+}
+main .adminPanel .tab-content #v-pills-adminProfile .adminProfileImage img {
+  border-radius: 23px;
+  border: 4px groove #311ec7;
+}
+main .adminPanel .tab-content #v-pills-adminProfile .adminProfileDescription {
+  height: 50%;
+}
+
+footer {
+  padding: 40px 0;
+  background-color: #343009;
+  color: #FB8604;
+}
+footer h1,
+footer h3 {
+  color: #F7E7D4;
+  border-bottom: 2px solid red;
+  text-align: center;
+  padding-bottom: 10px;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  border-bottom: 1px solid red;
+  padding-bottom: 5px;
+}
+footer ul a {
+  color: #F7E7D4;
+  text-decoration: none;
+}
+footer ul a:hover {
+  text-decoration: underline;
+}
+footer .accordion-button {
+  background-color: #FB8604;
+  color: #343009;
+}
+footer .accordion-body {
+  background-color: #F7E7D4;
+  color: #343009;
+}
+footer small {
+  color: #F7E7D4;
 }/*# sourceMappingURL=style.css.map */

@@ -4,53 +4,80 @@
     padding: 0;
 }
 
-:root {
-    --c1: #FCBA12;
-    --c2: #FB8604;
-    --c3: #F7E7D4;
-    --c4: #343009;
-}
+// 🎨 Color Palette
+$primary-yellow: #FCBA12;
+$accent-orange: #FB8604;
+$light-cream: #F7E7D4;
+$dark-brown: #343009;
 
+// 🧩 Typography Utilities
 .tx-c-4 {
-    color: var(--c3) !important;
+    color: $light-cream;
 }
 
+.h3 {
+    border-bottom: 2px solid red;
+    text-align: center;
+}
+
+// 🌐 Base Styles
 body {
-    background-color: var(--c3);
+    background-color: $light-cream;
 }
 
+// 🧭 Header
 header {
     .navbar {
-        background-color: var(--c1) !important;
-        color: var(--c2) !important;
+        background-color: $primary-yellow;
+        color: $accent-orange;
     }
 
     .carousel {
-        background-color: var(--c3);
-    }
+        background-color: $light-cream;
 
-    .carousel-inner {
-        height: 500px !important;
+        &-inner {
+            height: 500px;
+        }
     }
 }
 
+// 📦 Main Content
 main {
     min-height: 92vh;
 
-    .posts {
-        background-color: var(--c3);
+    .posts,
+    .trend-jewellery,
+    .most-sold-jewellery,
+    .new-jewellery {
+        background-color: $light-cream;
 
-        .jewellery .h1 {
-            padding: 20px !important;
+        h1 {
+            padding: 20px;
+            border-bottom: 2px solid red;
+            text-align: center;
         }
 
         .card {
             background-color: transparent;
             box-shadow: 0 2px 4px black;
 
+            .card-price {
+                color: $dark-brown;
+                font-weight: bold;
+            }
+
             a {
                 color: black;
                 text-decoration: none;
+            }
+
+            .btn {
+                background-color: $accent-orange;
+                color: $light-cream;
+
+                &:hover {
+                    background-color: darken($accent-orange, 10%);
+                }
             }
         }
 
@@ -60,10 +87,26 @@ main {
     }
 
     .loginSignInForm {
-
         form {
-            background: rgb(252, 186, 18);
-            background: linear-gradient(90deg, rgba(252, 186, 18, 0.11528361344537819) 8%, rgba(252, 186, 18, 0.10407913165266103) 96%);
+            background: linear-gradient(90deg,
+                    rgba(252, 186, 18, 0.115) 8%,
+                    rgba(252, 186, 18, 0.104) 96%);
+        }
+
+        @media screen and (max-width: 500px) {
+            width: 90%;
+        }
+
+        @media screen and (min-width: 501px) and (max-width: 619px) {
+            width: 60%;
+        }
+
+        @media screen and (min-width: 620px) and (max-width: 970px) {
+            width: 45%;
+        }
+
+        @media screen and (min-width: 971px) and (max-width: 1200px) {
+            width: 30%;
         }
     }
 
@@ -71,81 +114,101 @@ main {
         width: 95%;
 
         .nav-pills {
+            width: 15%;
+
             .nav-header {
-                background-color: var(--c4);
-                color: #F7E7D4;
+                background-color: $dark-brown;
+                color: $light-cream;
             }
 
             button {
-                background-color: var(--c2);
+                background-color: $accent-orange;
             }
 
             .active {
-                color: var(--c4) !important;
-                background-color: var(--c2);
-                box-shadow: 0px 4px 3px var(--c1), 0px -4px 3px var(--c1);
-                translate: 25px 0px;
+                color: $dark-brown;
+                background-color: $accent-orange;
+                box-shadow: 0 4px 3px $primary-yellow, 0 -4px 3px $primary-yellow;
+                translate: 25px 0;
                 transition: 0.9s;
             }
         }
-    }
 
+        .tab-content {
+            width: 80%;
+            height: 90vh;
+            margin-left: 5%;
+            background-color: $accent-orange;
+            box-shadow: -1px -1px 45px -2px rgba(116, 156, 168, 1),
+                1px 1px 45px -2px rgba(116, 156, 168, 1);
+            border-radius: 37px 37px 20px 20px;
+
+            #v-pills-adminProfile {
+                height: 100%;
+
+                .adminProfileImage {
+                    height: 50%;
+
+                    img {
+                        border-radius: 23px;
+                        border: 4px groove #311ec7;
+                    }
+                }
+
+                .adminProfileDescription {
+                    height: 50%;
+                }
+            }
+        }
+    }
 }
 
+// 🧱 Footer
 footer {
-    padding: 20px;
-    background-color: var(--c4) !important;
-    color: var(--c2) !important;
+    padding: 40px 0;
+    background-color: $dark-brown;
+    color: $accent-orange;
 
-    .accordion-item {
+    h1,
+    h3 {
+        color: $light-cream;
+        border-bottom: 2px solid red;
+        text-align: center;
+        padding-bottom: 10px;
+    }
 
-        button,
-        .accordion-header {
-            background-color: var(--c2) !important;
-            color: var(--c4) !important;
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+            margin-bottom: 10px;
+            border-bottom: 1px solid red;
+            padding-bottom: 5px;
         }
 
-        .accordion-body {
-            background-color: var(--c3);
-            color: var(--c4);
+        a {
+            color: $light-cream;
+            text-decoration: none;
 
-            ul {
-                margin: auto;
-            }
-
-            li {
-                list-style: none;
-                border-bottom: 1px solid red;
+            &:hover {
+                text-decoration: underline;
             }
         }
     }
-}
 
-.h3 {
-    border-bottom: 2px solid red;
-    text-align: center;
-}
-
-@media screen and (max-width: 500px) {
-    .loginSignInForm {
-        width: 90% !important;
+    .accordion-button {
+        background-color: $accent-orange;
+        color: $dark-brown;
     }
-}
 
-@media screen and (min-width: 501px) and (max-width: 619px) {
-    .loginSignInForm {
-        width: 60% !important;
+    .accordion-body {
+        background-color: $light-cream;
+        color: $dark-brown;
     }
-}
 
-@media screen and (min-width: 620px) and (max-width: 970px) {
-    .loginSignInForm {
-        width: 45% !important;
-    }
-}
-
-@media screen and (min-width: 971px) and (max-width: 1200px) {
-    .loginSignInForm {
-        width: 30% !important;
+    small {
+        color: $light-cream;
     }
 }
