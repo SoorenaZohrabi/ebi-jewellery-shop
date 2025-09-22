@@ -2,117 +2,115 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jewellery shop - Login&Sign up</title>
-    <link rel="shortcut icon" href="./../assets/images/icons/jewel-96.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./../assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jewellery Shop – Login</title>
+    <link rel="icon" href="../assets/images/icons/jewel-96.png" type="image/x-icon" />
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-    <script src="./../assets/js/app.js" defer></script>
+
+    <!-- Custom Scripts -->
+    <script src="../assets/js/app.js" defer></script>
 </head>
 
 <body>
     <header>
-
-        <nav class="navbar navbar-expand-lg navbar-light">
-
-            <div class="container-fluid ">
-                <a class="navbar-brand " href="./../index.html">Ebi Jewellery shop</a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg bg-primary-yellow">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold text-accent-orange" href="../index.html">Ebi Jewellery Shop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                    aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./../index.html">Home</a>
-                        </li>
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="men.html" id="navbarDarkDropdownMenuLink"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Men
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="./mRings.html">rings</a></li>
-                                <li><a class="dropdown-item" href="./mNecklaces.html">Necklaces</a></li>
-                                <li><a class="dropdown-item" href="./mBracelet">bracelet</a></li>
+                            <a class="nav-link dropdown-toggle" href="men.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Men</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="mRings.html">Rings</a></li>
+                                <li><a class="dropdown-item" href="mNecklaces.html">Necklaces</a></li>
+                                <li><a class="dropdown-item" href="mBracelet">Bracelet</a></li>
                             </ul>
                         </li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="women.html" id="navbarDarkDropdownMenuLink"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Women
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="./wRings.html">rings</a></li>
-                                <li><a class="dropdown-item" href="./wNecklaces">Necklaces</a></li>
-                                <li><a class="dropdown-item" href="./wBracelet">bracelet</a></li>
+                            <a class="nav-link dropdown-toggle" href="women.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Women</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="wRings.html">Rings</a></li>
+                                <li><a class="dropdown-item" href="wNecklaces">Necklaces</a></li>
+                                <li><a class="dropdown-item" href="wBracelet">Bracelet</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link active" href="./login.html">sign up & login</a></li>
+
+                        <li class="nav-item"><a class="nav-link active" href="login.html">Sign Up & Login</a></li>
                     </ul>
 
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
             </div>
-
         </nav>
-
     </header>
 
     <main>
-        <section class="loginSignInForm w-25 m-auto">
-            <form class="row gy-2 gx-3 align-items-center mt-5 needs-validation novalidate rounded shadow"
-                id="loginForm" autocomplete="off" onsubmit="checkAdminUsername()">
-                <div class="form-group col-12 pb-3 pt-3">
-                    <label class="visually-hidden" for="username">Username</label>
+        <section class="loginSignInForm container py-5">
+            <form class="row g-3 needs-validation p-4 rounded shadow bg-light-cream mx-auto" id="loginForm"
+                style="max-width: 500px;" autocomplete="off" novalidate>
+                <h2 class="text-center mb-4">Login</h2>
+
+                <div class="col-12">
+                    <label for="username" class="form-label visually-hidden">Username</label>
                     <div class="input-group">
-                        <div class="input-group-text bg-warning">#</div>
-                        <input type="text" class="form-control" id="username" placeholder="Username" required>
+                        <span class="input-group-text bg-warning">#</span>
+                        <input type="text" class="form-control" id="username" placeholder="Username" required />
                     </div>
                 </div>
 
-                <div class="form-group col-12 pb-4">
-                    <label class="visually-hidden" for="password">Password</label>
-                    <div class="input-group">
-                        <div class="input-group-text bg-warning">*</div>
-                        <input type="password" class="form-control invalid" id="password" placeholder="Password" required>
-                        <div class="invalid-feedback">
-                            Incorrect password or username.
-                        </div>
+                <div class="col-12">
+                    <label for="password" class="form-label visually-hidden">Password</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text bg-warning">*</span>
+                        <input type="password" class="form-control is-invalid" id="password" placeholder="Password"
+                            required />
+                        <div class="invalid-feedback">Incorrect password or username.</div>
                     </div>
                 </div>
 
-                <div class="col-auto pb-3">
+                <div class="col-12">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="saveDataCheck">
-                        <label class="form-check-label" for="saveDataCheck">
-                            Remember me
-                        </label>
+                        <input class="form-check-input" type="checkbox" id="saveDataCheck" />
+                        <label class="form-check-label" for="saveDataCheck">Remember me</label>
                     </div>
                 </div>
-                <div class="col-12 pb-2">
-                    <a id="loginButton"><button type="submit" class="btn btn-warning w-100">Login</button></a>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-warning w-100">Login</button>
                 </div>
 
-                <div class="formHelpers row pb-3">
-                    <a href="./signup.html" class="col-auto link-secondary text-decoration-none">Don`t have an
-                        account?<span class="link-info"> Sign up now!</span></a>
-                    <a href="" class="col-auto link-secondary text-decoration-none">Forgot password?</a>
+                <div class="col-12 text-center">
+                    <p class="mt-3 mb-0">
+                        Don’t have an account?
+                        <a href="signup.html" class="link-info text-decoration-none">Sign up now!</a>
+                    </p>
+                    <p class="mb-0">
+                        <a href="#" class="link-secondary text-decoration-none">Forgot password?</a>
+                    </p>
                 </div>
             </form>
         </section>

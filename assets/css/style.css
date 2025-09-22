@@ -85,8 +85,23 @@ main .most-sold-jewellery .col,
 main .new-jewellery .col {
   margin-bottom: 20px;
 }
+main .loginSignInForm {
+  background-color: #F7E7D4;
+}
 main .loginSignInForm form {
   background: linear-gradient(90deg, rgba(252, 186, 18, 0.115) 8%, rgba(252, 186, 18, 0.104) 96%);
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+main .loginSignInForm form .btn-warning {
+  background-color: #FCBA12;
+  color: #343009;
+}
+main .loginSignInForm form .btn-warning:hover {
+  background-color: rgb(216.2625, 156.0375, 2.7375);
+}
+main .loginSignInForm form .formHelpers a {
+  font-size: 0.9rem;
 }
 @media screen and (max-width: 500px) {
   main .loginSignInForm {
@@ -107,47 +122,6 @@ main .loginSignInForm form {
   main .loginSignInForm {
     width: 30%;
   }
-}
-main .adminPanel {
-  width: 95%;
-}
-main .adminPanel .nav-pills {
-  width: 15%;
-}
-main .adminPanel .nav-pills .nav-header {
-  background-color: #343009;
-  color: #F7E7D4;
-}
-main .adminPanel .nav-pills button {
-  background-color: #FB8604;
-}
-main .adminPanel .nav-pills .active {
-  color: #343009;
-  background-color: #FB8604;
-  box-shadow: 0 4px 3px #FCBA12, 0 -4px 3px #FCBA12;
-  translate: 25px 0;
-  transition: 0.9s;
-}
-main .adminPanel .tab-content {
-  width: 80%;
-  height: 90vh;
-  margin-left: 5%;
-  background-color: #FB8604;
-  box-shadow: -1px -1px 45px -2px rgb(116, 156, 168), 1px 1px 45px -2px rgb(116, 156, 168);
-  border-radius: 37px 37px 20px 20px;
-}
-main .adminPanel .tab-content #v-pills-adminProfile {
-  height: 100%;
-}
-main .adminPanel .tab-content #v-pills-adminProfile .adminProfileImage {
-  height: 50%;
-}
-main .adminPanel .tab-content #v-pills-adminProfile .adminProfileImage img {
-  border-radius: 23px;
-  border: 4px groove #311ec7;
-}
-main .adminPanel .tab-content #v-pills-adminProfile .adminProfileDescription {
-  height: 50%;
 }
 
 footer {

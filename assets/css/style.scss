@@ -87,12 +87,32 @@ main {
     }
 
     .loginSignInForm {
+        background-color: $light-cream;
+
         form {
             background: linear-gradient(90deg,
                     rgba(252, 186, 18, 0.115) 8%,
                     rgba(252, 186, 18, 0.104) 96%);
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+            .btn-warning {
+                background-color: $primary-yellow;
+                color: $dark-brown;
+
+                &:hover {
+                    background-color: darken($primary-yellow, 10%);
+                }
+            }
+
+            .formHelpers {
+                a {
+                    font-size: 0.9rem;
+                }
+            }
         }
 
+        // 📱 Responsive Widths
         @media screen and (max-width: 500px) {
             width: 90%;
         }
@@ -107,58 +127,6 @@ main {
 
         @media screen and (min-width: 971px) and (max-width: 1200px) {
             width: 30%;
-        }
-    }
-
-    .adminPanel {
-        width: 95%;
-
-        .nav-pills {
-            width: 15%;
-
-            .nav-header {
-                background-color: $dark-brown;
-                color: $light-cream;
-            }
-
-            button {
-                background-color: $accent-orange;
-            }
-
-            .active {
-                color: $dark-brown;
-                background-color: $accent-orange;
-                box-shadow: 0 4px 3px $primary-yellow, 0 -4px 3px $primary-yellow;
-                translate: 25px 0;
-                transition: 0.9s;
-            }
-        }
-
-        .tab-content {
-            width: 80%;
-            height: 90vh;
-            margin-left: 5%;
-            background-color: $accent-orange;
-            box-shadow: -1px -1px 45px -2px rgba(116, 156, 168, 1),
-                1px 1px 45px -2px rgba(116, 156, 168, 1);
-            border-radius: 37px 37px 20px 20px;
-
-            #v-pills-adminProfile {
-                height: 100%;
-
-                .adminProfileImage {
-                    height: 50%;
-
-                    img {
-                        border-radius: 23px;
-                        border: 4px groove #311ec7;
-                    }
-                }
-
-                .adminProfileDescription {
-                    height: 50%;
-                }
-            }
         }
     }
 }
